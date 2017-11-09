@@ -1,0 +1,23 @@
+div {
+  background-color: red;
+}
+div > div {
+  background-color: #fff;
+}
+div .active {
+  background-color: #fff;
+}
+div a {
+  font-size: 17px;
+}
+div a:hover {
+  display: none;
+  border-radius: 10px;
+  -webkit-border: 1px solid #000;
+  -moz-border: 1px solid red;
+  -ms-border: 1px solid red;
+  -o-border: 1px solid #000;
+}
+div::before {
+  border: 1px solid #000;
+}

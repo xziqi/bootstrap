@@ -1,0 +1,30 @@
+@addColor: red;
+.addRadius(@r:10px){
+border-radius: @r;
+  -webkit-border: 1px solid #000;
+  -moz-border: 1px solid @addColor;
+  -ms-border: 1px solid @addColor;
+  -o-border: 1px solid #000;
+}
+
+div{
+  background-color: @addColor;
+  >div{
+    background-color: #fff;
+  }
+  .active{
+    background-color: #fff;
+  }
+  a{
+    font-size: 17px;
+    &:hover{
+      display: none;
+      .addRadius;
+    }
+  }
+  &::before{
+    border: 1px solid #000;
+  }
+}
+
+
